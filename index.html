@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouquet Shop</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <img src="IMAGE/logoo.jpg">
+            </div>
+            <ul>
+                <li class="list"><a href="#">Home</a></li>
+                <li class="list"><a href="#">Services</a></li>
+                <li class="list"><a href="#">About Us</a></li>
+                <li class="list"><a href="#">Reviews</a></li>
+                <li class="list"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="home">
+        <h2>Best Flower Shop In Butwal</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur et </p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="Service">
+        <h1 class="h-primary">Our Services</h1>
+        <div id="ser">
+            <div class="box">
+                <h2 class="h-inside" id="card-1">Home Delivery</h2>
+                <img src="/IMAGE/1.jpg" alt="">
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo maiores Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box">
+                <h2 class="h-inside">Dried Flower</h2>
+                <img src="/IMAGE/2.jpg" alt="">
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo maiores Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box">
+                <h2 class="h-inside">Wedding Decoration</h2>
+                <img src="/IMAGE/3.jpg" alt="">
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo maiores Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="customer">
+        <h1 class="h-primary">Customer And Reviews</h1>
+        <div id="cust">
+            <img src="/IMAGE/cus.jpg" alt="">
+            <div class="fle">
+                <div class="boxs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero maiores fugit minim elit. quunt, d?</div>
+
+                <div class="boxs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit rem atqueipsum repellat consectetur volos nemo vero consectetur nihil possimus dolorem </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact">
+        <h1 class="h-primary">Contact Us</h1>
+        <div id="contact-form">
+            <form>
+                <div class="formm">
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                </div>
+                <div class="formm">
+                    <label for="address">Address:</label><br>
+                    <input type="text" name="Address" placeholder="Your address" id="address">
+                </div>
+                <div class="formm">
+                    <label for="phone no">Phone Number:</label><br>
+                    <input type="text" name="PhoneNo." placeholder="Your phone number" id="phone no">
+                </div>
+                <div class="formm">
+                    <label for="email">Email Address:</label><br>
+                    <input type="text" name="Email" placeholder="Your email address" id="email">
+                </div>
+                <div class="formm">
+                    <label for="area">Message(if any):</label><br>
+                    <textarea name="Message" id="area" cols="30" rows="10"></textarea>
+                </div>
+        </div>
+        </form>
+    </section>
+    <footer>
+        <div class="center">Copyright &copy;www.flowy.com</div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+        $(window).scroll(function(){
+            var positiontop = $(document).scrollTop();
+            console.log(positiontop);
+
+            if((positiontop > 300) && (positiontop < 650)){
+                $('.h-inside').addClass('animated bounceInLeft');
+            }
+        });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    font-family: 'Indie Flower', cursive;
+    position: sticky;
+}
+.container::before
+{
+    content:'';
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo{
+    margin: 15px 14px;
+}
+#logo img{
+    border-radius: 11px;
+    width: 77px;
+    height: 64px;
+}
+ul{
+   display: flex;
+}
+ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+ul li a{
+    color: whitesmoke; 
+    display: block;
+    text-decoration: none;
+    padding: 3px 22px;
+    border-radius: 20px;
+    margin: 10px;
+}
+ul li a:hover{
+    background-color: black;
+    color: cornsilk;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 355px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:'';
+    position: absolute;
+    background: url('/IMAGE/bgc.jpg') no-repeat center center/cover ;
+    height: 450px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8; 
+}
+h2{
+    font-size: 3.5rem;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Squada One', cursive;
+}
+p{
+    font-size: 25px;
+    color: rgb(247, 240, 240);
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+}
+.btn{
+    margin: 2rem;
+    padding: 8px 15px;
+    background-color: burlywood;
+    font-size: 1rem;
+    font-family: 'Indie Flower', cursive;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10rem;
+}
+.btn:hover{
+    background-color: black;
+    color: cornsilk;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    color: rgb(57 65 74);
+    margin: 2px;
+    padding-top: 15px;
+}
+.h-inside{
+    font-size: 2rem;
+    padding: 5px;
+}
+.center{
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+#ser{
+    margin: 34px;
+    display: flex;
+}
+#ser .box{
+    border: 2px solid black;
+    margin: 1px 10px;
+    padding: 15px;
+    background-color: rgb(168, 205, 206);
+    border-radius: 25px;
+    cursor: pointer;
+}
+/* #ser .box:hover{
+    transform: scale(1.2); */
+/* } */
+#ser .box img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+#cust{
+    display: flex;
+    margin-bottom: 4.5rem;
+}
+#customer::before{
+    content: '';
+    position: absolute;
+    background: url('/IMAGE/bg.jpg') no-repeat center center/cover;
+    height: 48%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.boxs{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 15px;
+    padding: 5px 5px;
+    font-size: 1rem;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 15px;
+    background-color: rgb(201, 184, 119);
+}
+#cust img{
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 5rem;
+    height: 30%;
+}
+
+
+#contact::before{
+    content: '';
+    position: absolute;
+    background: url('/IMAGE/bgg.jpeg');
+    height: 574px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+#contact-form label{
+    font-family: 'Indie Flower', cursive;
+    color: rgb(24, 44, 44);
+    font-size: 20px;
+}
+
+#contact-form input, 
+#contact-form textarea{
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+}
+footer{
+    background-color: black;
+    color: wheat;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    height: 50px;
+}
+@media (min-width:755px) and (max-width:1000px){
+    #ser{
+       display: block;
+       margin-left: 15%;
+    }
+}
+@media (min-width:500px)and (max-width:744px)
+{
+  #customer{
+      display: none;
+  }   
+}
